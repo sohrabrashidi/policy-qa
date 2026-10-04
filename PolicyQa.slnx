@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/PolicyQa.Core/PolicyQa.Core.csproj" />
+    <Project Path="src/PolicyQa.Api/PolicyQa.Api.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/PolicyQa.Tests/PolicyQa.Tests.csproj" />
+  </Folder>
+</Solution>
