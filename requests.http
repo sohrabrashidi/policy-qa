@@ -1,0 +1,22 @@
+@host = http://localhost:5090
+
+### Status: which mode is running and how much is indexed
+GET {{host}}/
+
+### Indexed documents
+GET {{host}}/documents
+
+### Ask a question
+POST {{host}}/ask
+Content-Type: application/json
+
+{ "question": "Do we need manager approval before serving a PEP?" }
+
+### Something the documents don't cover
+POST {{host}}/ask
+Content-Type: application/json
+
+{ "question": "What is the office dress code?" }
+
+### Upload another document (multipart). Easier with curl:
+# curl -F "file=@my-policy.md" http://localhost:5090/documents
